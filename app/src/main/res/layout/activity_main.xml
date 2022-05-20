@@ -11,7 +11,7 @@
         android:id="@+id/turnTV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Turn X"
+        android:text="@string/turn_x"
         android:textColor="@color/black"
         android:textSize="40sp"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -108,5 +108,15 @@
 
 
     </LinearLayout>
+
+    <Button
+        android:id="@+id/NewGame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="48dp"
+        android:text="@string/new_game"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

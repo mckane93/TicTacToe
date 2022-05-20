@@ -9,6 +9,7 @@ import com.example.tictactoe.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity()
 {
+
     enum class Turn
     {
         NOUGHT,
@@ -32,6 +33,7 @@ class MainActivity : AppCompatActivity()
         setContentView(binding.root)
         initBoard()
     }
+
 
     private fun initBoard()
     {
@@ -69,6 +71,7 @@ class MainActivity : AppCompatActivity()
         }
 
     }
+
 
     private fun checkForVictory(s: String): Boolean
     {
@@ -119,6 +122,7 @@ class MainActivity : AppCompatActivity()
         {
             button.text = ""
         }
+
 
         if(firstTurn == Turn.NOUGHT)
             firstTurn = Turn.CROSS
